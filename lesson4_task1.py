@@ -31,7 +31,7 @@ def mapper():
 		#print line[4], line[4].find('!'), len(line[4])-1
 		#print line[4], line[4].find('?'), len(line[4])-1
 		if (line[4].find('!') == -1 or line[4].find('!') == len(line[4])-1) and (line[4].find('.') == -1 or line[4].find('.') == len(line[4])-1) and (line[4].find('?') == -1 or line[4].find('?') == len(line[4])-1):
-			print line
+			writer.writerow(line)
           
         #writer.writerow(line)
 
